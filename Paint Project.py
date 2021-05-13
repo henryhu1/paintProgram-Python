@@ -725,7 +725,7 @@ while running:
 
         if openRect.collidepoint(mx,my): #opening a file
             try:
-                fname=filedialog.askopenfilename(filetypes=[("Images","*.png;*.jpg;*.jpeg")])
+                fname=filedialog.askopenfilename(filetypes=[("Images","*.png *.jpg *.jpeg")])
                 loadPic=image.load(fname)
                 loadPic=transform.scale(loadPic,(700,600))
                 screen.blit(loadPic,(20,70))
