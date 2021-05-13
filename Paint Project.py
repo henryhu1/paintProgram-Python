@@ -1,5 +1,4 @@
 #Paint Project.py
-$ git clone https://github.com/<username>/<projectname>
 
 from pygame import *
 from random import *
