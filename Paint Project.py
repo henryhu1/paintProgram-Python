@@ -27,6 +27,7 @@ YELLOW=(247,239,5,255)
 GREY=(127,127,127,255)
 #=====================================================================music
 mixer.init()
+mixer.music.set_volume(0.3)
 mixer.music.load("music/opening1.ogg")
 mixer.music.play()
 stopOrPlay=0 #flag variable for stopping or playing music
@@ -1094,7 +1095,7 @@ while running:
                 for sprayCircle in range(1,25):
                     xStartPoint,yStartPoint=randint(mx-sprayRadius,mx+sprayRadius),randint(my-sprayRadius,my+sprayRadius)
                     if (xStartPoint-mx)**2+(yStartPoint-my)**2<=sprayRadius**2:
-                        draw.circle(screen,col,(xStartPoint,yStartPoint),0)
+                        draw.circle(screen,col,(xStartPoint,yStartPoint),1)
 
             if tool=="fill": #fills canvas
                 screen.subsurface(canvasRect).fill(col)
